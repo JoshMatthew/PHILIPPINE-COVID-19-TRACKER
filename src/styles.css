@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Button';
+  src: url('./resources/segoe-mdl2-assets.ttf');
+}
+
+header {
+  background-color: #02050c;
+  width: 100%;
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  -webkit-app-region: drag
+}
+
+header h1 {
+  font-size: 0.9rem;
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #686674;
+  margin-left: 1rem;
+}
+
+.buttons {
+  margin-left: auto;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.buttons div {
+  font-size: 1rem;
+  color: #89888f;
+  font-weight: 100;
+  width: 2rem;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: #e01616;
+  color: #eee;
+}
+
+.minimize:hover {
+  background-color: #43424b;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.main-container, .second-container {
+  width: 100%;
+  height: 87vh;
+  background-color: #0f0f14;
+  flex-direction: column;
+}
+
+.first-part, .second-part {
+  flex: 1;
+  display: flex;
+  text-align: center;
+}
+
+.controls {
+  flex: 1
+}
+
+.current {
+  margin: auto;
+  flex-basis: 100%;
+  height: 100%;
+  background-color: #1c1b1f; 
+  flex: 2
+}
+
+.death, .recovered {
+  flex: 1;
+  margin: auto;
+  flex-basis: 100%;
+  height: 100%;
+  background-color: #100f11;
+}
+
+div label {
+  display: block;
+}
+
+.current label, .death label, .recovered label, .details label {
+  color: #8a8a8a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  
+}
+
+.current label, .death label, .recovered label {
+  margin-top: 1.2rem;
+}
+
+.current label {
+  font-size: 1rem;
+}
+
+.death label, .recovered label {
+  font-size: 0.8rem;
+}
+
+.current span {
+  font-size: 4rem;
+  color: aliceblue;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.death span, .recovered span {
+  font-size: 3.5rem;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.death span {
+  color: #8a1515;
+}
+
+.recovered span {
+  color: #e4e713;
+}
+
+.flag {
+  display: inline;
+  opacity: 90%;
+}
+
+.controls button, .details button {
+  background: none;
+  padding: 5px 15px;
+  color: #525255;
+  font-size: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  border: #525255 solid 2px;
+  cursor: pointer;
+}
+
+.controls button {
+  margin-top: 1rem;
+}
+
+.controls button:hover, .details button:hover {
+  border: #919196 solid 2px;
+}
+
+.controls button:focus, .details button:focus {
+  outline: none;
+}
+
+.controls button:active, .details button:active {
+  color: #bebec4;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem auto 0 auto;
+  width: 55%;
+  /* background: #fff; */
+}
+
+.details label {
+  font-size: 0.7rem;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  background: #18171a;
+  padding: 3px;
+}
+
+.title h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  color: #4b4a4d;
+  text-transform: uppercase;
+}
+
+.details-value {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.details-value div {
+  display: flex;
+}
+
+.details-value span, .details-value label {
+  flex: 1;
+}
+
+.details-value label {
+  margin-top: 1rem;
+}
+
+.details-value span {
+  margin-top: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #c9c9c9;
+}
+
+.button-back {
+  display: flex;
+  align-items: center;
+}
+
+.details button {
+  flex: 1;
+  margin-top: 0.7rem;
+}

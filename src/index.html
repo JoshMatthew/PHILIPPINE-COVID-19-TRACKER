@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>COVID 19 Philippine Tracker</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>COVID 19 TRACKER</h1>
+    <div class="buttons">
+      <div class="minimize" id="minBtn">-</div>
+      <div class="close" id="closeBtn">&#10006;</div>
+    </div>
+  </header>
+  <div class="main-container show" id="mainWin">
+    <div class="first-part">
+      <div class="controls">
+        <button id="moreDetails">More Details</button>
+        <button id="btnRefresh">Refresh</button>
+      </div>
+      <div class="current">
+        <label>current cases in <img class="flag" src="./resources/phpflag.png" /></label>
+        <span id="current">Loading...</span>
+      </div>
+
+    </div>
+    <div class="second-part">
+      <div class="death"><label>deaths</label><span id="death">Loading...</span></div>
+      <div class="recovered"><label>recovered</label><span id="recovered">Loading...</span></div>
+    </div>
+  </div>
+
+
+  <div class="second-container hide" id="secondWin">
+    <div class="details">
+      <div class="title">
+        <h2>Details</h2>
+      </div>
+      <div class="details-value">
+        <div>
+          <label>Cases Today</label>
+          <span id="casesToday">Loading...</span>
+        </div>
+        <div>
+          <label>Deaths Today</label>
+          <span id="deathsToday">Loading...</span>
+        </div>
+        <div>
+          <label>Recoveries Today</label>
+          <span id="recoveriesToday">Loading...</span>
+        </div>
+        <div>
+          <label>Fatality Rate</label>
+          <span id="fatalityRate">Loading...</span>
+        </div>
+        <div>
+          <label>Recovery Rate</label>
+          <span id="recoveryRate">Loading...</span>
+        </div>
+      </div>
+      <div class="button-back">
+        <button id="backToMain">Back</button>
+      </div>
+    </div>
+  </div>
+  <script src="./controls.js"></script>
+</body>
+
+</html>
