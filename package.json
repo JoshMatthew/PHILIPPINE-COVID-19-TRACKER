@@ -20,7 +20,8 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "icon": "./src/resources/covid19-icon.png"
+        "icon": "/src/resources/covid19_icon.ico",
+        "asar": true
       },
       "makers": [
         {
