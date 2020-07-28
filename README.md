@@ -1,5 +1,8 @@
 # PHILIPPINE-COVID-19-TRACKER 
 
+# Notice!
+This app is not accurate as of now since the API I use is not working. I am still finding a new API to update this application so it can be useable again.
+
 A simple desktop application made from electron.js.
 Currently this application only supports windows operating system arch x64.
 This application gets the latest COVID-19 updates using the [COVID-19 API](https://coronavirus-ph-api.herokuapp.com/#/) made by 
